@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "YFHXYA", "YFHXYA.vbproj", "{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Debug|x86.ActiveCfg = Debug|x86
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Debug|x86.Build.0 = Debug|x86
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Release|x86.ActiveCfg = Release|x86
+		{2A5F2850-08CE-4A6C-A9A7-533F261B9E60}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75649FD8-46D1-479F-BE39-B5264544FFBF}
+	EndGlobalSection
+EndGlobal

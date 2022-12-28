@@ -1,0 +1,167 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0</FileVersion>
+    <PackageReleaseNotes>第一版
+主程序版本    1.0.0
+UI版本    1.0.0
+数据库版本    1.0.0</PackageReleaseNotes>
+    <PackageTags>凤凰学业;YFHXYA;www.yfhxya.top</PackageTags>
+    <PackageIcon>Logo.PNG</PackageIcon>
+    <Copyright>YFHXYA</Copyright>
+    <IncludeSymbols>False</IncludeSymbols>
+    <Platforms>AnyCPU;x86</Platforms>
+    <Title>YFHXYA</Title>
+    <Description># YFHXYA-凤凰学业
+#### 介绍
+{**以下是 YFHXYA 平台说明简介**
+企业项目请看 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/)}
+
+#### 软件架构
+软件架构说明：Any CPU
+适用于Windows操作系统（Windows7及以上版本）
+【需安装.NET 6.0 运行库】
+#### 安装教程
+
+1.  安装.NET 6.0 运行库（若已安装则跳过）
+2.  运行程序
+3.  xxxx
+
+#### 使用说明
+
+1.  
+2.  xxxx
+3.  xxxx
+
+#### 参与贡献
+
+1.  Fork 本仓库
+2.  新建 Feat_xxx 分支
+3.  提交代码
+4.  新建 Pull Request
+
+
+#### 特技
+
+1.  使用
+2.  YFHXYA 官方团队 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/)
+3.  你可以 [https://e.gitee.com/YFHXYA/](https://e.gitee.com/YFHXYA/) 这个地址来了解 Gitee 上的优秀开源项目
+4.  YFHXYA 官方提供的使用手册</Description>
+    <PackageProjectUrl>https://github.com/Ivan0610/YFHXYA-Windows.git</PackageProjectUrl>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackAsTool>False</PackAsTool>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <EnforceCodeStyleInBuild>False</EnforceCodeStyleInBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/Ivan0610/YFHXYA-Windows.git</RepositoryUrl>
+    <OptionCompare>Binary</OptionCompare>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+    <UseWPF>False</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Optimize>True</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <DefineDebug>True</DefineDebug>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <RegisterForComInterop>True</RegisterForComInterop>
+    <DefineDebug>True</DefineDebug>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXml" Version="2.19.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Form1 - 复制.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Settings.Designer.vb">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Logo.PNG">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Settings.settings">
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+</Project>
