@@ -124,7 +124,7 @@ Public Class Form3
     Private Sub 关于ToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles 关于ToolStripMenuItem.Click
         WaitForm.Show()
         Me.Enabled = False
-        set_up.TabPage3.Show()
+        set_up.Show()
         set_up.TabControl1.SelectedIndex = 2
     End Sub
 
