@@ -93,6 +93,14 @@ Public Class Form3
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
         NotifyIcon1.Visible = True
         NotifyIcon1.ShowBalloonTip(888, "凤凰学业（YFHXYA）", "凤凰学业持续为您服务！", ToolTipIcon.Info)
+        WaitForm.Show()
+        Dim I
+        For I = 1 To 0 Step -0.01
+            Me.Opacity = I
+            Application.DoEvents()
+            Thread.Sleep(5)
+        Next
+        zmkj1.Show()
         Me.Opacity = 0
         '        xmldoc.load("XML_Data_1.xml")
         '        Dim root As XmlNode = xmldoc.SelectSingleNode("bookstore")

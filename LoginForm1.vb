@@ -18,12 +18,14 @@ Public Class LoginForm1
             MessageBox.Show("µ«»Î ß∞‹£°"£©
         End If
         Me.Close()
+        set_up.Enabled = True
     End Sub
 
     Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
         Me.Close()
         set_up.Show()
         Me.TopMost = False
+        set_up.Enabled = True
     End Sub
 
     Private Sub LoginForm1_Load(sender As Object, e As EventArgs) Handles MyBase.Load

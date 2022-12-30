@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>YFHXYA.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <AssemblyVersion>1.0.0</AssemblyVersion>
@@ -162,6 +162,7 @@ UI版本    1.0.0
 
   <ItemGroup>
     <Folder Include="Data\" />
+    <Folder Include="My Project\DataSources\" />
   </ItemGroup>
 
 </Project>
