@@ -71,6 +71,7 @@ UI版本    1.0.0
     <Optimize>True</Optimize>
     <RegisterForComInterop>True</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AndroidKeyStore>False</AndroidKeyStore>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
@@ -78,6 +79,7 @@ UI版本    1.0.0
     <PlatformTarget>AnyCPU</PlatformTarget>
     <RegisterForComInterop>True</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AndroidKeyStore>False</AndroidKeyStore>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
@@ -85,12 +87,14 @@ UI版本    1.0.0
     <RegisterForComInterop>True</RegisterForComInterop>
     <DefineDebug>True</DefineDebug>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AndroidKeyStore>False</AndroidKeyStore>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <RegisterForComInterop>True</RegisterForComInterop>
     <DefineDebug>True</DefineDebug>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <AndroidKeyStore>False</AndroidKeyStore>
   </PropertyGroup>
 
   <ItemGroup>

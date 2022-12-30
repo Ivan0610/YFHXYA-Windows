@@ -8,9 +8,9 @@ Public Class zmkj1
     Private Sub zmkj1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Opacity = 0
         Height = My.Computer.Screen.Bounds.Height / 2
-        Left = 0
+        Left = 8
         Top = (My.Computer.Screen.Bounds.Height - Me.Height) / 2
-        Width = 45
+        Width = 50
         Dim path As GraphicsPath = GetRoundedRectPath(Me.ClientRectangle, 20)
         Me.Region = New Region(path)
         Me.TopMost = True
