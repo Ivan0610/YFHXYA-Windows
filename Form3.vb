@@ -120,6 +120,7 @@ Public Class Form3
     End Sub
 
     Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
+        zmkj1.Close()
         Me.Show()
         Me.Opacity = 1
     End Sub
